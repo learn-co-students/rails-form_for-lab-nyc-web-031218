@@ -1,0 +1,13 @@
+<h1>Classes </h1>
+<% @schoolclasses.each do |sc| %>
+  <label>Class Title: </label>
+  <div><%= link_to(sc.title, schoolclass_path(sc.id)) %></div>
+
+
+  <label>Room Number: </label>
+  <div><%= sc.room_number %></div>
+
+  <br/>
+<% end %>
+
+<div><%= link_to("New Class", new_schoolclass_path) %></div>

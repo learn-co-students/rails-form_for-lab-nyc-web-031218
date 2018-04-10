@@ -1,0 +1,6 @@
+<h1><%= @schoolclass.title %></h1>
+<p><%= @schoolclass.room_number %></p>
+
+<div><%=link_to("All Classes", schoolclasses_path)  %></div>
+
+<div><%= link_to("Edit Class", edit_schoolclass_path(@schoolclass.id)) %></div>
