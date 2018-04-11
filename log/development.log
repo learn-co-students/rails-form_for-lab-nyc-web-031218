@@ -38,3 +38,1954 @@ Started GET "/" for ::1 at 2015-11-18 13:37:10 -0600
 Processing by Rails::WelcomeController#index as HTML
   Rendered /Users/admin/.rvm/gems/ruby-2.1.2/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
 Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-04-10 17:46:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.10) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.10) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (124.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSchoolClasses (20180410213819)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "school_classes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "room_number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20180410213819"]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2018-04-10 17:47:18 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 36ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2018-04-10 17:50:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (39.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (257.1ms)
+
+
+Started GET "/students" for ::1 at 2018-04-10 17:53:05 -0400
+Processing by StudentsController#index as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template students/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/frankmcmanus/Development/rails-form_for-lab-nyc-web-031218/app/views"
+):
+  actionview (4.2.10) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.10) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.10) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.10) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.10) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.10) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.10) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.10) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.10) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.10) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.9) lib/rack/etag.rb:24:in `call'
+  rack (1.6.9) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.9) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (113.7ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-10 17:53:18 -0400
+Processing by StudentsController#new as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template students/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/frankmcmanus/Development/rails-form_for-lab-nyc-web-031218/app/views"
+):
+  actionview (4.2.10) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.10) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.10) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.10) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.10) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.10) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.10) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.10) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.10) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.10) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.9) lib/rack/etag.rb:24:in `call'
+  rack (1.6.9) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.9) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (129.7ms)
+
+
+Started GET "/students/1" for ::1 at 2018-04-10 17:53:18 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template students/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/frankmcmanus/Development/rails-form_for-lab-nyc-web-031218/app/views"
+):
+  actionview (4.2.10) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.10) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.10) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.10) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.10) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.10) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.10) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.10) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.10) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.10) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.9) lib/rack/etag.rb:24:in `call'
+  rack (1.6.9) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.9) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (190.6ms)
+
+
+Started GET "/students" for ::1 at 2018-04-10 17:55:00 -0400
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 585ms (Views: 579.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-04-10 17:55:27 -0400
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:01:01 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6:   </ul>
+     7: <% end %>
+     8: 
+     9: <%= form_for @student do |f| %>
+    10:   <%= f.label :first_name %>
+    11:   <%= f.text_field :first_name, placeholder: "First Name" %>
+    12:   <%= f.label :last_name %>
+  app/views/students/new.html.erb:9:in `_app_views_students_new_html_erb___3939198981886812125_70264252944900'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (152.7ms)
+  [1m[36mStudent Load (22.8ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (7.6ms)[0m  [1mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Frank"], ["last_name", "McManus"], ["created_at", "2018-04-11 11:04:19.179778"], ["updated_at", "2018-04-11 11:04:19.179778"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT "students".* FROM "students"[0m
+
+
+Started GET "/students/index" for ::1 at 2018-04-11 07:04:42 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendered students/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 140ms (Views: 135.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/index" for ::1 at 2018-04-11 07:05:00 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendered students/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:05:41 -0400
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 137ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:06:17 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (16.6ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     7: <% end %>
+     8: 
+     9: <h1>Student create</h1>
+    10: <!-- <%= form_for @student do |f| %>
+    11:   <%= f.label :first_name %>
+    12:   <%= f.text_field :first_name, placeholder: "First Name" %>
+    13:   <%= f.label :last_name %>
+  app/views/students/new.html.erb:10:in `_app_views_students_new_html_erb___3939198981886812125_70264245107560'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (26.1ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (155.2ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:06:30 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 164ms (Views: 163.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:07:21 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mStudent Load (8.6ms)[0m  [1mSELECT "students".* FROM "students"[0m
+Completed 500 Internal Server Error in 383078ms (ActiveRecord: 10.5ms)
+
+SystemExit (exit):
+  app/controllers/students_controller.rb:5:in `index'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (150.2ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (43.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (341.4ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:13:46 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6:   </ul>
+     7: <% end %>
+     8: 
+     9: <!-- <%= form_for @student do |f| %>
+    10:   <%= f.label :first_name %>
+    11:   <%= f.text_field :first_name, placeholder: "First Name" %>
+    12:   <%= f.label :last_name %>
+  app/views/students/new.html.erb:9:in `_app_views_students_new_html_erb___3939198981886812125_70264242360500'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (164.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (43.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (350.8ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:14:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (2.7ms)[0m  SELECT "students".* FROM "students"
+Completed 500 Internal Server Error in 199576ms (ActiveRecord: 3.2ms)
+
+SystemExit (exit):
+  app/controllers/students_controller.rb:7:in `index'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (115.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (25.2ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (289.0ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:19:11 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6:   </ul>
+     7: <% end %>
+     8: 
+     9: <%= form_for @student do |f| %>
+    10:   <%= f.label :first_name %>
+    11:   <%= f.text_field :first_name, placeholder: "First Name" %>
+    12:   <%= f.label :last_name %>
+  app/views/students/new.html.erb:9:in `_app_views_students_new_html_erb___2669454564427441445_70319937909700'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (162.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (42.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.2ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (317.2ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:26:53 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (175.8ms)
+Completed 200 OK in 1649ms (Views: 1607.3ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/students" for ::1 at 2018-04-11 07:27:29 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ao4T77txo4z6XVRMk03jt8TzDlIYhI69wcSqiX9r6lmhySNrEluK6iW3EhZm0XdMHfltqlaSY2ZxPQchjE9ZWw==", "student"=>{"first_name"=>"B", "last_name"=>"Gatsby"}, "commit"=>"Create Student"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["first_name", "B"], ["last_name", "Gatsby"], ["created_at", "2018-04-11 11:27:29.214427"], ["updated_at", "2018-04-11 11:27:29.214427"]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/students/4
+Completed 302 Found in 45ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/students/4" for ::1 at 2018-04-11 07:27:29 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendered students/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 172ms (Views: 167.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:27:42 -0400
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 222ms (Views: 215.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:29:40 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 303ms (Views: 294.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2018-04-11 07:29:47 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kxiYswVnFG+aowhxh77S6I6UCnHkLiQxEgXlxeLMz+cwX6g3rE09CUVJTityIkYTV55piao4yeqi/EhtEeh85Q==", "student"=>{"first_name"=>"Another", "last_name"=>"One"}, "commit"=>"Create Student"}
+  [1m[35m (0.9ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Another"], ["last_name", "One"], ["created_at", "2018-04-11 11:29:47.393333"], ["updated_at", "2018-04-11 11:29:47.393333"]]
+  [1m[35m (4.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/students/5
+Completed 302 Found in 55ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/students/5" for ::1 at 2018-04-11 07:29:47 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered students/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 240ms (Views: 234.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:30:10 -0400
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 218ms (Views: 211.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:30:11 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 272ms (Views: 265.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2018-04-11 07:30:20 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IZ7UMjhkapeFto3SerngDSAqVqSQdAAhsMse2PIRaF2C2eS2kU5D8Vpcy4iPJXT2+SA1XN5i7foAMrNwATXbXw==", "student"=>{"first_name"=>"Yet", "last_name"=>"Another"}, "commit"=>"Create Student"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["first_name", "Yet"], ["last_name", "Another"], ["created_at", "2018-04-11 11:30:20.327753"], ["updated_at", "2018-04-11 11:30:20.327753"]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/students/6
+Completed 302 Found in 40ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/students/6" for ::1 at 2018-04-11 07:30:20 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendered students/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 145ms (Views: 133.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:30:56 -0400
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 275ms (Views: 259.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:30:57 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (53.6ms)
+Completed 200 OK in 309ms (Views: 297.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2018-04-11 07:31:06 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0zCxgUq866ko29mz26ycLFTy6VP/1XEQVVk73N/T/pJwd4EF45bCz/cxn+kuMAjXjfiKq7HDnMvloJZ0LPdNkA==", "student"=>{"first_name"=>"Maybe ", "last_name"=>"Thiswillwork"}, "commit"=>"Create Student"}
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Maybe "], ["last_name", "Thiswillwork"], ["created_at", "2018-04-11 11:31:06.892424"], ["updated_at", "2018-04-11 11:31:06.892424"]]
+  [1m[35m (11.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/students/7
+Completed 302 Found in 41ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/students/7" for ::1 at 2018-04-11 07:31:06 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  Rendered students/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 135ms (Views: 129.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:31:27 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 259ms (Views: 244.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2018-04-11 07:31:38 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xpIXBI9nSg3zLljnw6/rNJQCINN7t56TZ6p+18omAnVl1SeAJk1jayzEHr02M3/PTQhDKzWhc0jXU9N/OQKxdw==", "student"=>{"first_name"=>"Maybe", "last_name"=>"Thisone"}, "commit"=>"Create Student"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["first_name", "Maybe"], ["last_name", "Thisone"], ["created_at", "2018-04-11 11:31:38.551425"], ["updated_at", "2018-04-11 11:31:38.551425"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/students/8
+Completed 302 Found in 40ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/students/8" for ::1 at 2018-04-11 07:31:38 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"8"}
+  Rendered students/show.html.erb within layouts/application (90.2ms)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    1: <%= @student.first_name %>
+  app/views/students/show.html.erb:1:in `_app_views_students_show_html_erb___2449497883411077072_70319978301640'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (182.0ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (56.7ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (364.4ms)
+  [1m[36mStudent Load (7.1ms)[0m  [1mSELECT "students".* FROM "students"[0m
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:34:15 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 302ms (Views: 249.4ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/students" for ::1 at 2018-04-11 07:34:22 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bqkfyjo8hJPN4CE0zCXhlRmvXrJNhhLjuJ/7y8G09rLN7i9Okxat9RIKZ245uXVuwKU9SgOQ/zgIZlZjMpBFsA==", "student"=>{"first_name"=>"Pretty", "last_name"=>"Sure"}, "commit"=>"Create Student"}
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Pretty"], ["last_name", "Sure"], ["created_at", "2018-04-11 11:34:22.103400"], ["updated_at", "2018-04-11 11:34:22.103400"]]
+  [1m[35m (3.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/students/9
+Completed 302 Found in 46ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/students/9" for ::1 at 2018-04-11 07:34:22 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mStudent Load (0.9ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered students/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 269ms (Views: 232.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/students/9/edit" for ::1 at 2018-04-11 07:39:17 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mStudent Load (8.9ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered students/edit.html.erb within layouts/application (1141.7ms)
+Completed 500 Internal Server Error in 1252ms (ActiveRecord: 11.7ms)
+
+ActionView::Template::Error (undefined method `tattoo_path' for #<#<Class:0x007fe944e20d80>:0x007fe945bd4b20>):
+    14:   <%= f.submit %>
+    15: <% end %>
+    16: 
+    17: <%= form_tag tattoo_path(@student), method: "DELETE" do %>
+    18: <%= submit_tag ("Delete Tattoo") %>
+    19: <% end %>
+  app/views/students/edit.html.erb:17:in `_app_views_students_edit_html_erb__2202580811979819022_70319934831560'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (278.2ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (71.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (479.1ms)
+
+
+Started GET "/students/9/edit" for ::1 at 2018-04-11 07:39:47 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered students/edit.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 266ms (Views: 256.9ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/students/9" for ::1 at 2018-04-11 07:40:02 -0400
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EMqCnSOWsYX9S8mEfTsG8n9gfDZ1pDOj6XQwCLdNAKWzjbIZiryY4yKhj96Ip5IJpmofzjuy3nhZjZ2gRGmzpw==", "student"=>{"first_name"=>"Pretty", "last_name"=>"Surethisactuallyworks"}, "commit"=>"Update Student", "id"=>"9"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template students/update, application/update with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/frankmcmanus/Development/rails-form_for-lab-nyc-web-031218/app/views"
+):
+  actionview (4.2.10) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.10) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.10) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.10) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.10) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.10) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.10) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.10) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.10) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.10) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.9) lib/rack/etag.rb:24:in `call'
+  rack (1.6.9) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.9) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/frankmcmanus/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (210.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (50.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (382.0ms)
+
+
+Started GET "/students/9/edit" for ::1 at 2018-04-11 07:40:42 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mStudent Load (0.7ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 9]]
+Redirected to http://localhost:3000/students/9
+Completed 302 Found in 83ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/students/9" for ::1 at 2018-04-11 07:40:43 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered students/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 256ms (Views: 245.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students/9/edit" for ::1 at 2018-04-11 07:40:49 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mStudent Load (0.5ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 9]]
+Redirected to http://localhost:3000/students/9
+Completed 302 Found in 12ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/students/9" for ::1 at 2018-04-11 07:40:49 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered students/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 184ms (Views: 169.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students/9/edit" for ::1 at 2018-04-11 07:41:02 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mStudent Load (1.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered students/edit.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 427ms (Views: 224.3ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/students/9/edit" for ::1 at 2018-04-11 07:41:42 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mStudent Load (0.8ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered students/edit.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 271ms (Views: 251.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:44:03 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (1.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (87.6ms)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: <h1>All students</h1>
+    2: <%= @students.each do |student| %>
+    3:   <ul>
+    4:     <li> <%= student.to_s %></li>
+    5:   </ul>
+    6: <% end %>
+  app/models/student.rb:3:in `to_s'
+  app/views/students/index.html.erb:4:in `block in _app_views_students_index_html_erb___1257378598907893408_70319966347780'
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1257378598907893408_70319966347780'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (259.0ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (50.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (447.3ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:45:57 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.8ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (56.0ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: <h1>All students</h1>
+    2: <% @students.each do |student| %>
+    3:   <ul>
+    4:     <li> <%= student %></li>
+    5:   </ul>
+    6: <% end %>
+  app/models/student.rb:3:in `to_s'
+  app/views/students/index.html.erb:4:in `block in _app_views_students_index_html_erb___1257378598907893408_70319940338460'
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1257378598907893408_70319940338460'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (270.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (56.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (449.5ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:46:09 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (1.3ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (71.0ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 1.3ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: <h1>All students</h1>
+    2: <% @students.each do |student| %>
+    3:   <ul>
+    4:     <li> <%= student %></li>
+    5:   </ul>
+    6: <% end %>
+  app/models/student.rb:3:in `to_s'
+  app/views/students/index.html.erb:4:in `block in _app_views_students_index_html_erb___1257378598907893408_70319966365740'
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1257378598907893408_70319966365740'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (276.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (64.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (468.5ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 07:47:13 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 324ms (Views: 309.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/6" for ::1 at 2018-04-11 07:47:14 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mStudent Load (1.4ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered students/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 400ms (Views: 374.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:47:35 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (1.8ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (82.4ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 1.8ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    2: 
+    3: <!-- <% @students.each do |student| %>
+    4:   <ul>
+    5:     <li> <%= student %></li>
+    6:   </ul>
+    7: <% end %> -->
+  app/models/student.rb:3:in `to_s'
+  app/views/students/index.html.erb:5:in `block in _app_views_students_index_html_erb___1257378598907893408_70319977762420'
+  app/views/students/index.html.erb:3:in `_app_views_students_index_html_erb___1257378598907893408_70319977762420'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (335.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (77.2ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (554.2ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:48:05 -0400
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 221ms (Views: 215.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:48:46 -0400
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 278ms (Views: 271.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:50:17 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (1.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (58.8ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 1.2ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: <h1>All students</h1>
+    2:  <% @students.each do |s| %>
+    3:     <p> <%= s %> </p>
+    4:  <% end %>
+  app/models/student.rb:3:in `to_s'
+  app/views/students/index.html.erb:3:in `block in _app_views_students_index_html_erb___1257378598907893408_70319929529780'
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1257378598907893408_70319929529780'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (265.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (58.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (439.6ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:50:52 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 280ms (Views: 249.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/students/6" for ::1 at 2018-04-11 07:51:36 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mStudent Load (0.8ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered students/show.html.erb within layouts/application (114.3ms)
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 2.9ms)
+
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    1: <%= @student.to_s %>
+  app/models/student.rb:3:in `to_s'
+  app/views/students/show.html.erb:1:in `_app_views_students_show_html_erb___2449497883411077072_70319962101760'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (261.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (66.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.7ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (466.1ms)
+
+
+Started GET "/students/6" for ::1 at 2018-04-11 07:51:54 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mStudent Load (1.2ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered students/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 288ms (Views: 221.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:52:24 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (1.7ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (67.2ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 1.7ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: <h1>All students</h1>
+    2:  <% @students.each do |s| %>
+    3:     <p> <%= s.to_s %> </p>
+    4:  <% end %>
+  app/models/student.rb:3:in `to_s'
+  app/views/students/index.html.erb:3:in `block in _app_views_students_index_html_erb___1257378598907893408_70319932695640'
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1257378598907893408_70319932695640'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (359.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (58.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (545.1ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:52:27 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.7ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (56.7ms)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: <h1>All students</h1>
+    2:  <% @students.each do |s| %>
+    3:     <p> <%= s.to_s %> </p>
+    4:  <% end %>
+  app/models/student.rb:3:in `to_s'
+  app/views/students/index.html.erb:3:in `block in _app_views_students_index_html_erb___1257378598907893408_70319932695640'
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1257378598907893408_70319932695640'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (216.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (53.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (367.5ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:53:17 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (8.4ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (68.1ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 8.4ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: <h1>All students</h1>
+    2:  <% @students.each do |s| %>
+    3:     <p> <%= s.first_name + " " + s.last_name %> </p>
+    4:  <% end %>
+  app/views/students/index.html.erb:3:in `block in _app_views_students_index_html_erb___1257378598907893408_70319962214100'
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1257378598907893408_70319962214100'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (288.1ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (65.0ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (477.2ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:53:35 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (1.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (62.5ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: <h1>All students</h1>
+    2:  <% @students.each do |s| %>
+    3:     <p> <%= s %> </p>
+    4:  <% end %>
+  app/models/student.rb:3:in `to_s'
+  app/views/students/index.html.erb:3:in `block in _app_views_students_index_html_erb___1257378598907893408_70319940473600'
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1257378598907893408_70319940473600'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (253.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (56.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (426.6ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:53:48 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.9ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 276ms (Views: 246.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:54:05 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.8ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 202ms (Views: 188.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:54:26 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.8ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (58.7ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: <h1>All students</h1>
+    2:  <% @students.each do |s| %>
+    3:     <p> <%= s.first_name + " " + s.last_name%> </p>
+    4:  <% end %>
+  app/views/students/index.html.erb:3:in `block in _app_views_students_index_html_erb___1257378598907893408_70319978421560'
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1257378598907893408_70319978421560'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (240.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (65.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (423.6ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:55:18 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (96.4ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: <h1>All students</h1>
+    2:  <% @students.each do |s| %>
+    3:  <ul>
+    4:    <li><%= s.first_name + " " + s.last_name%></li>
+    5:  </ul>
+    6: 
+    7:  <% end %>
+  app/views/students/index.html.erb:4:in `block in _app_views_students_index_html_erb___1257378598907893408_70319961837240'
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1257378598907893408_70319961837240'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (270.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (77.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (476.7ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:55:21 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.7ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (45.1ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    1: <h1>All students</h1>
+    2:  <% @students.each do |s| %>
+    3:  <ul>
+    4:    <li><%= s.first_name + " " + s.last_name%></li>
+    5:  </ul>
+    6: 
+    7:  <% end %>
+  app/views/students/index.html.erb:4:in `block in _app_views_students_index_html_erb___1257378598907893408_70319961837240'
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1257378598907893408_70319961837240'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (232.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (50.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (395.1ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:56:13 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (2.3ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 255ms (Views: 243.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:56:37 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (1.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 299ms (Views: 270.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/students/6" for ::1 at 2018-04-11 07:56:44 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mStudent Load (0.7ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered students/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 181ms (Views: 167.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 07:57:41 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (1.9ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (54.4ms)
+Completed 200 OK in 476ms (Views: 466.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/students/2/edit" for ::1 at 2018-04-11 08:03:56 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStudent Load (3.5ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered students/edit.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 410ms (Views: 287.9ms | ActiveRecord: 17.9ms)
+
+
+Started PATCH "/students/2" for ::1 at 2018-04-11 08:04:05 -0400
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qeqUG6MVbK15lqVdprobUdEymoN1UAC2TByWgrtFH1oKraSfCj9Fy6Z84wdTJo+qCDj5eztG7W385TsqSGGsWA==", "student"=>{"first_name"=>"Second", "last_name"=>"Student"}, "commit"=>"Update Student", "id"=>"2"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (16.1ms)[0m  [1mUPDATE "students" SET "first_name" = ?, "last_name" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["first_name", "Second"], ["last_name", "Student"], ["updated_at", "2018-04-11 12:04:05.579282"], ["id", 2]]
+  [1m[35m (6.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/students/2
+Completed 302 Found in 201ms (ActiveRecord: 23.4ms)
+
+
+Started GET "/students/2" for ::1 at 2018-04-11 08:04:05 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered students/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 209ms (Views: 196.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 08:04:14 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.8ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 208ms (Views: 201.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/students/2" for ::1 at 2018-04-11 08:04:59 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (2.2ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered students/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 304ms (Views: 219.3ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/students/2/edit" for ::1 at 2018-04-11 08:05:08 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStudent Load (6.8ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered students/edit.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 236ms (Views: 220.7ms | ActiveRecord: 6.8ms)
+
+
+Started DELETE "/students/2" for ::1 at 2018-04-11 08:05:19 -0400
+Processing by StudentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BEgpVHWWFBjnrVW67egIbba0XWlhgMsDAoNHiHulEh2nDxnQ3Lw9fjhHE+AYdJyWb74+kS+WJtiyeuogiIGhHw==", "commit"=>"Delete Student", "id"=>"2"}
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (7.2ms)[0m  [1mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 2]]
+  [1m[35m (4.2ms)[0m  commit transaction
+Completed 500 Internal Server Error in 723ms (ActiveRecord: 12.2ms)
+
+NameError (undefined local variable or method `tattoos_path' for #<StudentsController:0x007fe9491bf078>):
+  app/controllers/students_controller.rb:43:in `destroy'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (123.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (35.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (323.4ms)
+
+
+Started GET "/students/2/edit" for ::1 at 2018-04-11 08:05:46 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (3.0ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 53ms (ActiveRecord: 5.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=2):
+  app/controllers/students_controller.rb:26:in `edit'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (177.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (42.0ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.7ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (353.5ms)
+
+
+Started GET "/students/6/edit" for ::1 at 2018-04-11 08:05:58 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mStudent Load (1.6ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered students/edit.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 329ms (Views: 273.1ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/students/6" for ::1 at 2018-04-11 08:06:00 -0400
+Processing by StudentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dgHEbQIowTJmtUEq/1/KANfbvvuZgvKZP7FniBYFzqLVRvTpqwLoVLlfB3AKw177DtHdA9eUH0KPSMog5SF9oA==", "commit"=>"Delete Student", "id"=>"6"}
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 6]]
+  [1m[35m (3.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/students
+Completed 302 Found in 43ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 08:06:00 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (1.6ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 216ms (Views: 208.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/students/7/edit" for ::1 at 2018-04-11 08:06:18 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mStudent Load (0.8ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered students/edit.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 268ms (Views: 252.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/students/7" for ::1 at 2018-04-11 08:06:21 -0400
+Processing by StudentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cY8nx4JLUDGLLL2BixnoZew7tCDDQK7sHgiYuVhikqvSyBdDK2F5V1TG+9t+hXyeNTHX2I1WQzeu8TURq0YhqQ==", "commit"=>"Delete Student", "id"=>"7"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/students
+Completed 302 Found in 40ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/students" for ::1 at 2018-04-11 08:06:21 -0400
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.9ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 259ms (Views: 249.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/students/1" for ::1 at 2018-04-11 08:08:45 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (2.9ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 358ms (Views: 263.3ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2018-04-11 08:08:47 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.7ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered students/edit.html.erb within layouts/application (87.5ms)
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 1.7ms)
+
+ActionView::Template::Error (Missing partial views/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/frankmcmanus/Development/rails-form_for-lab-nyc-web-031218/app/views"
+):
+    1: <%= render 'views/form' %>
+    2: <%= form_tag student_path(@student), method: "DELETE" do %>
+    3: <%= submit_tag ("Delete Student") %>
+    4: <% end %>
+  app/views/students/edit.html.erb:1:in `_app_views_students_edit_html_erb__2202580811979819022_70319933124900'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (378.7ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (93.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (606.4ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2018-04-11 08:09:26 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (1.4ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/edit.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (Missing partial app/views/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/frankmcmanus/Development/rails-form_for-lab-nyc-web-031218/app/views"
+):
+    1: <%= render 'app/views/form' %>
+    2: <%= form_tag student_path(@student), method: "DELETE" do %>
+    3: <%= submit_tag ("Delete Student") %>
+    4: <% end %>
+  app/views/students/edit.html.erb:1:in `_app_views_students_edit_html_erb__2202580811979819022_70319933303580'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (380.6ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (89.0ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (607.0ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2018-04-11 08:11:50 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered students/edit.html.erb within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (Missing partial errors/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/frankmcmanus/Development/rails-form_for-lab-nyc-web-031218/app/views"
+):
+    1: <%= render 'errors/form' %>
+    2: 
+    3: <%= form_tag student_path(@student), method: "DELETE" do %>
+    4: <%= submit_tag ("Delete Student") %>
+  app/views/students/edit.html.erb:1:in `_app_views_students_edit_html_erb__2202580811979819022_70319938976800'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (338.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (78.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (546.7ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2018-04-11 08:12:20 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.5ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/edit.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (Missing partial students/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/frankmcmanus/Development/rails-form_for-lab-nyc-web-031218/app/views"
+):
+    1: <%= render 'form' %>
+    2: 
+    3: <%= form_tag student_path(@student), method: "DELETE" do %>
+    4: <%= submit_tag ("Delete Student") %>
+  app/views/students/edit.html.erb:1:in `_app_views_students_edit_html_erb__2202580811979819022_70319977993820'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (305.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (68.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (496.3ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2018-04-11 08:13:04 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered students/_form.html.erb (55.3ms)
+  Rendered students/edit.html.erb within layouts/application (71.6ms)
+Completed 200 OK in 297ms (Views: 288.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 08:13:55 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (38.8ms)
+  Rendered students/new.html.erb within layouts/application (53.6ms)
+Completed 200 OK in 430ms (Views: 421.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 08:15:05 -0400
+Processing by StudentsController#new as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/frankmcmanus/Development/rails-form_for-lab-nyc-web-031218/app/models/student.rb:3: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+  validates :last_name, presence: true
+             ^):
+  app/models/student.rb:3: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+  app/controllers/students_controller.rb:12:in `new'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (236.1ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (51.0ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.1ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (427.6ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 08:15:37 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (25.6ms)
+  Rendered students/new.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 325ms (Views: 265.9ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/students" for ::1 at 2018-04-11 08:15:43 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KEMLILDzoIz36BU2GwSb8Ryr8DfFAR0STNLLkuqgT/mLBDukGdmJ6igCU2zumA8KxaGTz4sX8Mn8K2Y6GYT8+w==", "student"=>{"first_name"=>";sdlfj", "last_name"=>""}, "commit"=>"Create Student"}
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 1120ms (ActiveRecord: 0.9ms)
+
+NameError (undefined local variable or method `new_tattoo_path' for #<StudentsController:0x007fe9461f8628>
+Did you mean?  new_student_path):
+  app/controllers/students_controller.rb:21:in `create'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (185.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (48.8ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (375.2ms)
+
+
+Started POST "/students" for ::1 at 2018-04-11 08:16:12 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KEMLILDzoIz36BU2GwSb8Ryr8DfFAR0STNLLkuqgT/mLBDukGdmJ6igCU2zumA8KxaGTz4sX8Mn8K2Y6GYT8+w==", "student"=>{"first_name"=>";sdlfj", "last_name"=>""}, "commit"=>"Create Student"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 147ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 08:16:12 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (30.4ms)
+  Rendered students/new.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 276ms (Views: 266.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2018-04-11 08:16:17 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l/UDDF4WkwavxmIcyeUOkU4MNhRNoThnwxw/XxMbeRY0sjOI9zy6YHAsJEY8eZpqlwZV7AO31bxz5ZL34D/KFA==", "student"=>{"first_name"=>";laksdfj", "last_name"=>""}, "commit"=>"Create Student"}
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 53ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 08:16:17 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (26.3ms)
+  Rendered students/new.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 192ms (Views: 187.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2018-04-11 08:16:22 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VyAdsUIlB8WT0GsCQEh5tvXF7sWs+AlvXZxKllynC6D0Zy016w8uo0w6LVi11O1NLM+NPeLu5LTtZec+r4O4og==", "student"=>{"first_name"=>"", "last_name"=>"sd;sdf"}, "commit"=>"Create Student"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 34ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 08:16:22 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (15.1ms)
+  Rendered students/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 141ms (Views: 136.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2018-04-11 08:16:25 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OgdWtjezx2dDF3zjwSqYa9EoA6Sp10QMzPExs5u1tLaZQGYynpnuAZz9Ork0tgyQCCJgXOfBqdd8CJwbaJEHtA==", "student"=>{"first_name"=>"", "last_name"=>""}, "commit"=>"Create Student"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 60ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/students/new" for ::1 at 2018-04-11 08:16:25 -0400
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (14.1ms)
+  Rendered students/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 146ms (Views: 142.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSchoolClass Load (8.4ms)[0m  [1mSELECT "school_classes".* FROM "school_classes"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Science"], ["room_number", 5], ["created_at", "2018-04-11 12:29:06.578514"], ["updated_at", "2018-04-11 12:29:06.578514"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36mSchoolClass Load (0.3ms)[0m  [1mSELECT "school_classes".* FROM "school_classes"[0m
+
+
+Started GET "/students" for ::1 at 2018-04-11 08:31:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (3.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (2.6ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 421ms (Views: 392.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/school_classes" for ::1 at 2018-04-11 08:31:46 -0400
+Processing by SchoolClassesController#index as HTML
+  [1m[36mSchoolClass Load (2.2ms)[0m  [1mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 39ms (Views: 30.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/school_classes/new" for ::1 at 2018-04-11 08:38:47 -0400
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (167.4ms)
+Completed 200 OK in 257ms (Views: 232.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/school_classes" for ::1 at 2018-04-11 08:38:56 -0400
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+4862ySj9KytstqY1Il7r/c47yPdEASk730Xo7B/s0pYyApfjYndynJYnMIhFe9ULjKM25MG6X9fhLoLQ1sASA==", "school_class"=>{"title"=>"10", "room_number"=>"Art"}, "commit"=>"Create School class"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `creat' for #<Class:0x007fb2c08626d8>
+Did you mean?  create
+               create!):
+  app/controllers/school_classes_controller.rb:16:in `create'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (119.3ms)
+
+
+Started GET "/school_classes/new" for ::1 at 2018-04-11 08:39:48 -0400
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 114ms (Views: 85.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/school_classes" for ::1 at 2018-04-11 08:40:06 -0400
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XUueMFFgVnXnuIM4JBKoe8mwWsAN3j4al64JuhID8qD+DK60+Ep/EzhSxWLRjjyAELo5OEPI08EnV6QS4SdBog==", "school_class"=>{"title"=>"Art", "room_number"=>"10"}, "commit"=>"Create School class"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Art"], ["room_number", 10], ["created_at", "2018-04-11 12:40:06.648708"], ["updated_at", "2018-04-11 12:40:06.648708"]]
+  [1m[35m (4.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/school_classes/2
+Completed 302 Found in 18ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/school_classes/2" for ::1 at 2018-04-11 08:40:06 -0400
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSchoolClass Load (0.4ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered school_classes/show.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    1: <%= @student.first_name %>
+  app/views/school_classes/show.html.erb:1:in `_app_views_school_classes_show_html_erb___448937598756847900_70202893559620'
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (130.5ms)
+
+
+Started GET "/school_classes/new" for ::1 at 2018-04-11 08:41:48 -0400
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 98ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/school_classes" for ::1 at 2018-04-11 08:41:59 -0400
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5rS5QCwSwbnS67bNgy+d47a5gdet4qXOhwNN/A2gMXhF84nEhTjo3w0B8Jd2swkYb7PiL+P0SBU3+uBU/oSCeg==", "school_class"=>{"title"=>"Art", "room_number"=>"10"}, "commit"=>"Create School class"}
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Art"], ["room_number", 10], ["created_at", "2018-04-11 12:41:59.428160"], ["updated_at", "2018-04-11 12:41:59.428160"]]
+  [1m[35m (3.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/school_classes/3
+Completed 302 Found in 22ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/school_classes/3" for ::1 at 2018-04-11 08:41:59 -0400
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (0.3ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered school_classes/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/school_classes/3" for ::1 at 2018-04-11 08:42:50 -0400
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSchoolClass Load (0.2ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered school_classes/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/school_classes/3" for ::1 at 2018-04-11 08:43:14 -0400
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (1.3ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered school_classes/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 84ms (Views: 74.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/school_classes/3" for ::1 at 2018-04-11 08:43:29 -0400
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSchoolClass Load (0.3ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered school_classes/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/school_classes" for ::1 at 2018-04-11 08:44:33 -0400
+Processing by SchoolClassesController#index as HTML
+  [1m[36mSchoolClass Load (1.8ms)[0m  [1mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 214ms (Views: 203.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/school_classes" for ::1 at 2018-04-11 08:52:09 -0400
+
+SyntaxError (/Users/frankmcmanus/Development/rails-form_for-lab-nyc-web-031218/app/controllers/school_classes_controller.rb:51: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/school_classes_controller.rb:51: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.7ms)
+  Rendered /Users/frankmcmanus/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (130.6ms)
+
+
+Started GET "/school_classes" for ::1 at 2018-04-11 08:52:28 -0400
+Processing by SchoolClassesController#index as HTML
+  [1m[35mSchoolClass Load (7.4ms)[0m  SELECT "school_classes".* FROM "school_classes"
+  Rendered school_classes/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 118ms (Views: 92.5ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/school_classes/new" for ::1 at 2018-04-11 08:52:33 -0400
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/school_classes" for ::1 at 2018-04-11 08:52:40 -0400
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ONQjS+88RF0Ap6rVMtH0WZtgB7LqmyPYQ3zOWTHGfwSbkxPPRhZtO99N7I/HTWCiQmpkSqSNzgPzhWPxwuLMBg==", "school_class"=>{"title"=>"Math", "room_number"=>"20"}, "commit"=>"Create School class"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Math"], ["room_number", 20], ["created_at", "2018-04-11 12:52:40.472010"], ["updated_at", "2018-04-11 12:52:40.472010"]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/school_classes/4
+Completed 302 Found in 18ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/school_classes/4" for ::1 at 2018-04-11 08:52:40 -0400
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mSchoolClass Load (0.4ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered school_classes/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/school_classes/4/edit" for ::1 at 2018-04-11 08:52:46 -0400
+Processing by SchoolClassesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered school_classes/edit.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/school_classes/4" for ::1 at 2018-04-11 08:52:53 -0400
+Processing by SchoolClassesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4ibBO+wN7X8rFXbJ22CQiu/S7IQwzipM4OO5O8jDCZhBYfG/RSfEGfT/MJMu/ARxNtiPfH7Yx5dQGhSTO+e6mg==", "school_class"=>{"title"=>"Math", "room_number"=>"40"}, "commit"=>"Update School class", "id"=>"4"}
+  [1m[35mSchoolClass Load (0.1ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.7ms)[0m  UPDATE "school_classes" SET "room_number" = ?, "updated_at" = ? WHERE "school_classes"."id" = ?  [["room_number", 40], ["updated_at", "2018-04-11 12:52:53.110947"], ["id", 4]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/school_classes/4
+Completed 302 Found in 23ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/school_classes/4" for ::1 at 2018-04-11 08:52:53 -0400
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mSchoolClass Load (0.1ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered school_classes/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes/4/edit" for ::1 at 2018-04-11 08:52:57 -0400
+Processing by SchoolClassesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered school_classes/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/school_classes/4" for ::1 at 2018-04-11 08:52:59 -0400
+Processing by SchoolClassesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GZh42EGQX/k3vbsvgz2xJd+XJe/wwaQH/vosfXB1H2O630hc6Lp2n+hX/XV2oSXeBp1GF77XSdxOA4HVg1GsYQ==", "commit"=>"Delete Class", "id"=>"4"}
+  [1m[35mSchoolClass Load (0.2ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.0ms)[0m  DELETE FROM "school_classes" WHERE "school_classes"."id" = ?  [["id", 4]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/school_classes
+Completed 302 Found in 14ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/school_classes" for ::1 at 2018-04-11 08:52:59 -0400
+Processing by SchoolClassesController#index as HTML
+  [1m[35mSchoolClass Load (0.1ms)[0m  SELECT "school_classes".* FROM "school_classes"
+  Rendered school_classes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes/new" for ::1 at 2018-04-11 08:53:06 -0400
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/school_classes/3" for ::1 at 2018-04-11 08:53:08 -0400
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (3.0ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered school_classes/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 33ms (Views: 23.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/school_classes/3/edit" for ::1 at 2018-04-11 08:53:13 -0400
+Processing by SchoolClassesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSchoolClass Load (0.2ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered school_classes/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/school_classes/3" for ::1 at 2018-04-11 08:53:15 -0400
+Processing by SchoolClassesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EHDGg5gC/9QA7q/9QXuWgqs7PfCx/4ItyWMfRi7QeyCzN/YHMSjWst8E6ae05wJ5cjFeCP/pb/Z5mrLu3fTIIg==", "commit"=>"Delete Class", "id"=>"3"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "school_classes" WHERE "school_classes"."id" = ?[0m  [["id", 3]]
+  [1m[35m (2.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/school_classes
+Completed 302 Found in 14ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/school_classes" for ::1 at 2018-04-11 08:53:15 -0400
+Processing by SchoolClassesController#index as HTML
+  [1m[36mSchoolClass Load (0.4ms)[0m  [1mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.4ms)
