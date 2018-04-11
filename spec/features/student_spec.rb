@@ -15,6 +15,7 @@ describe 'form page' do
 
     click_on "Create Student"
 
+
     expect(page).to have_content("Lindsey")
   end
 
