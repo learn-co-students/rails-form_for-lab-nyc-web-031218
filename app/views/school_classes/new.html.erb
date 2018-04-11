@@ -1,0 +1,17 @@
+<h1>School Class Form</h1>
+
+<% if flash[:errors] %>
+  <ul>
+    <% flash[:errors].each do |msg| %>
+      <li> <%= msg %> </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @school_class do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, placeholder: "Title" %>
+  <%= f.label :room_number %>
+  <%= f.text_field :room_number, placeholder: "Room Number" %>
+  <%= f.submit %>
+<% end %>

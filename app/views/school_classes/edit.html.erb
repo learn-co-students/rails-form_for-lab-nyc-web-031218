@@ -1,0 +1,19 @@
+<% if flash[:errors] %>
+  <ul>
+    <% flash[:errors].each do |msg| %>
+      <li> <%= msg %> </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @school_class do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, placeholder: "First Name" %>
+  <%= f.label :room_number %>
+  <%= f.text_field :room_number, placeholder: "Last Name" %>
+  <%= f.submit %>
+<% end %>
+
+<%= form_tag school_class_path(@school_class), method: "DELETE" do %>
+<%= submit_tag ("Delete Class") %>
+<% end %>

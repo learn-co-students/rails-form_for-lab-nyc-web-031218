@@ -14,13 +14,14 @@ For this lab you will be extending the functionality of the Flatiron school's st
 
 Below is what will be needed for each component of the MVC structure:
 
-* **Models** - Create a `SchoolClass` model, along with its associated database table. The `SchoolClass` table should have the columns: `title:string` and `room_number:integer`. The `Student` model and database table have already been created for you.
+<!-- * **Models** - Create a `SchoolClass` model, along with its associated database table. The `SchoolClass` table should have the columns: `title:string` and `room_number:integer`. The `Student` model and database table have already been created for you.
+done
 
-* **Controllers** - Create controller files for `school_classes` and `students`. Build out the `new`, `create`, `show`, `edit`, and `update` actions in each of the controllers.
+* **Controllers** - Create controller files for `school_classes` and `students`. Build out the `new`, `create`, `show`, `edit`, and `update` actions in each of the controllers. -->
 
 * **Views** - Create a show page for each resource, along with `new` and `edit` forms.
 
-You will also need to create routes for each path mentioned above.
+<!-- You will also need to create routes for each path mentioned above. -->
 
 The tests for this application are located in the `spec/controllers/`, `spec/features/`, and `spec/models/` directories.
 
